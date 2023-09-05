@@ -1,4 +1,4 @@
-# arqbeam-sink-pubsub
+# arqbeam-pubsubio
 An Apache Beam sink for arqbeam-app.
 
 This implementation uses go/pubsub google sdk to publish messages in Pubsub topic.
@@ -10,8 +10,8 @@ package main
 
 import (
 	"context"
-    "github.com/arquivei/arqbeam-sink-pubsub"
-	errorpubsubio "github.com/arquivei/arqbeam-sink-pubsub/error"
+    "github.com/arquivei/arqbeam-pubsubio"
+	errorpubsubio "github.com/arquivei/arqbeam-pubsubio/error"
 
 	"github.com/apache/beam/sdks/v2/go/pkg/beam"
 	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/textio"
@@ -32,7 +32,7 @@ func getPipeline(ctx context.Context) *beam.Pipeline {
     // Read some files with textio default from apache beam go sdk 
 	readRows := textio.Read(s, config.GCSInputFile)
 
-    // Send each line to pubsub with pubsubio from arqbeam-sink-pubsub
+    // Send each line to pubsub with pubsubio from arqbeam-pubsubio
 	pbResult := pubsubio.Publish(s, config.Pubsub.Project, config.Pubsub.Topic, config.Pubsub.BatchSize, readRows)
 
     // Log if any error happened in publish step
