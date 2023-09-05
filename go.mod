@@ -1,4 +1,4 @@
-module github.com/arquivei/arqbeam-sink-pubsub
+module github.com/arquivei/arqbeam-pubsubio
 
 go 1.20
 
