@@ -32,7 +32,7 @@ type Publisher struct {
 	Topic     string
 	BatchSize int
 
-	topic *pubsub.Topic
+	topic *pubsub.Publisher
 }
 
 func (fn *Publisher) Setup(ctx context.Context) {
@@ -41,7 +41,7 @@ func (fn *Publisher) Setup(ctx context.Context) {
 		panic(err)
 	}
 
-	pubSubTopic := pubSubClient.Topic(fn.Topic)
+	pubSubTopic := pubSubClient.Publisher(fn.Topic)
 	pubSubTopic.PublishSettings.CountThreshold = fn.BatchSize
 	fn.topic = pubSubTopic
 }
