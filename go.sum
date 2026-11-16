@@ -15,8 +15,8 @@ cloud.google.com/go/monitoring v1.30.0 h1:r/d+JUbyKmJ8b07iznuKfzVzrIXTWxHQ3lBRm3
 cloud.google.com/go/monitoring v1.30.0/go.mod h1:htlUR0QWVMrjFzZmN4LGnMAve9xB/eduwjmINxVZ8RM=
 cloud.google.com/go/profiler v0.6.0 h1:Vwxqgnp8CQwBNcKjO8luwLCh7qblEkcZCtMUvhU9Yik=
 cloud.google.com/go/profiler v0.6.0/go.mod h1:cJV7Qfj0o9PAC7q/xQTkM6qn2FO9So3TFk4P5O5yLis=
-cloud.google.com/go/pubsub/v2 v2.8.1 h1:DyLrbgccmcqbygvbfHXne9ukTynrKtgQsOBkM0GniSY=
-cloud.google.com/go/pubsub/v2 v2.8.1/go.mod h1:OaymNdZYwo89Xow5XC3unXn9VknMq/+AbLJO7dwRsdc=
+cloud.google.com/go/pubsub/v2 v2.9.0 h1:n0obETiU+DSIjNFBZx72sFaW9di18ZMgPN9SDYq7o2Q=
+cloud.google.com/go/pubsub/v2 v2.9.0/go.mod h1:OaymNdZYwo89Xow5XC3unXn9VknMq/+AbLJO7dwRsdc=
 cloud.google.com/go/storage v1.67.1 h1:cDeyjY1ik/2IBs4/nLytL6Orrtbi5M0G6beyGRl/9EQ=
 cloud.google.com/go/storage v1.67.1/go.mod h1:UsS9OgFg/XHOSYakQ8ZtLWWeyGkk1WnmD/GsGfN0BHM=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
